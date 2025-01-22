@@ -18,7 +18,7 @@
 
 1. 克隆仓库：
 ```bash
-git clone https://github.com/yourusername/alist-file-monitor.git
+git clone https://github.com/lunarhash/AlistCopyMen
 cd alist-file-monitor
 ```
 
