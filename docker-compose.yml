@@ -1,0 +1,17 @@
+version: '3'
+services:
+  alist-monitor:
+    build: .
+    container_name: alist-monitor
+    restart: unless-stopped
+    volumes:
+      - ./config.json:/app/config.json
+      - ./logs:/app/logs
+    environment:
+      - TZ=Asia/Shanghai
+      - PYTHONUNBUFFERED=1
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

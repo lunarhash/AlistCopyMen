@@ -1,0 +1,20 @@
+{
+    "alist": {
+        "url": "https://your-alist-server.com",
+        "token": "your-alist-token",
+        "username": "admin",
+        "password": "your-password"
+    },
+    "monitor": {
+        "source_path": "/source",
+        "dest_path": "/destination",
+        "check_interval": 30,
+        "delete_source": true
+    },
+    "notification": {
+        "discord_webhook": "your-discord-webhook-url",
+        "notify_on_copy": true,
+        "notify_on_delete": true,
+        "notify_on_error": true
+    }
+}
